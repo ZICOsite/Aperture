@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--primary-font);
+    line-height: 1;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: bottom;
+}
+
+input, button {
+    border: 0;
+    outline: 0;
+}
+
+body {
+    background: var(--primary-color);
+}
+
+.container {
+    max-width: 1192px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 12px;
+}
+
+.btn {
+    width: 100%;
+    background: var(--secondary-color);
+    font-size: 15px;
+    padding: 5px 10px 5px 5px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    border-radius: 14px;
+    letter-spacing: 0.4px;
+    color: var(--primary-color);
+}
+
+.circle {
+    width: 32px;
+    height: 32px;
+    background: var(--primary-color);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+}
+
+.title {
+    color: var(--secondary-color);
+    text-align: center;
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.subtitle {
+    color: var(--ternaty-color);
+    text-align: center;
+    font-size: 23px;
+    text-wrap: balance;
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 34px;
+    }
+
+    .subtitle {
+        font-size: 18px;
+    }
+}
+
+.info {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 16px;
+    padding: 0 28px;
+    bottom: 40px;
+}
+
+.info__icon {
+    color: var(--secondary-color);
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.desc {
+    position: absolute;
+    right: 40px;
+    max-width: 320px;
+    width: 100%;
+    padding: 0 12px;
+}
+
+.desc__title {
+    color: var(--secondary-color);
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.desc__txt {
+    color: var(--ternaty-color);
+    font-size: 14px;
+    line-height: 20px;
+    text-wrap: balance;
+}
+
+@media (max-width: 480px) {
+    .desc {
+        right: unset;
+    }
+}
