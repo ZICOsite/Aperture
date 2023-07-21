@@ -48,6 +48,10 @@ body {
     color: var(--primary-color);
 }
 
+.btn:hover .circle {
+    animation-play-state: running;
+}
+
 .circle {
     width: 32px;
     height: 32px;
@@ -55,6 +59,17 @@ body {
     border-radius: 50%;
     display: grid;
     place-items: center;
+    animation: rotate 2s linear infinite;
+    animation-play-state: paused;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 .title {

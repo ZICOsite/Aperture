@@ -32,6 +32,10 @@
 .nav {
     background: #181818;
     padding: 24px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 99;
 }
 
 .nav .container {
@@ -171,7 +175,7 @@
         top: 0;
         right: -80%;
         width: 80%;
-        height: 100%;
+        height: 100dvh;
         background: var(--primary-color);
         display: grid;
         place-items: center;
